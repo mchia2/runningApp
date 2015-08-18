@@ -19,6 +19,11 @@
 		FB6D22681B83D0C800E28541 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D22671B83D0C800E28541 /* Run.m */; };
 		FB6D226B1B83D36500E28541 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D226A1B83D36500E28541 /* HomeViewController.m */; };
 		FB6D226E1B83D3BB00E28541 /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D226D1B83D3BB00E28541 /* NewRunViewController.m */; };
+		FB6D22701B83D84E00E28541 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D226F1B83D84E00E28541 /* MapKit.framework */; };
+		FB6D22721B83D85700E28541 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22711B83D85700E28541 /* CoreGraphics.framework */; };
+		FB6D22741B83D85B00E28541 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22731B83D85B00E28541 /* CoreData.framework */; };
+		FB6D22761B83D86600E28541 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22751B83D86600E28541 /* UIKit.framework */; };
+		FB6D22781B83D86C00E28541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22771B83D86C00E28541 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		FB6D226A1B83D36500E28541 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FB6D226C1B83D3BB00E28541 /* NewRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRunViewController.h; sourceTree = "<group>"; };
 		FB6D226D1B83D3BB00E28541 /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
+		FB6D226F1B83D84E00E28541 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FB6D22711B83D85700E28541 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB6D22731B83D85B00E28541 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FB6D22751B83D86600E28541 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB6D22771B83D86C00E28541 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6D22781B83D86C00E28541 /* Foundation.framework in Frameworks */,
+				FB6D22761B83D86600E28541 /* UIKit.framework in Frameworks */,
+				FB6D22741B83D85B00E28541 /* CoreData.framework in Frameworks */,
+				FB6D22721B83D85700E28541 /* CoreGraphics.framework in Frameworks */,
+				FB6D22701B83D84E00E28541 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,11 @@
 		FB6D222B1B83D01800E28541 = {
 			isa = PBXGroup;
 			children = (
+				FB6D22771B83D86C00E28541 /* Foundation.framework */,
+				FB6D22751B83D86600E28541 /* UIKit.framework */,
+				FB6D22731B83D85B00E28541 /* CoreData.framework */,
+				FB6D22711B83D85700E28541 /* CoreGraphics.framework */,
+				FB6D226F1B83D84E00E28541 /* MapKit.framework */,
 				FB6D22361B83D01800E28541 /* RunningApp */,
 				FB6D22561B83D01800E28541 /* RunningAppTests */,
 				FB6D22351B83D01800E28541 /* Products */,
