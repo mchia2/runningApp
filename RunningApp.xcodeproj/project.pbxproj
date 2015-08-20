@@ -24,7 +24,22 @@
 		FB6D22741B83D85B00E28541 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22731B83D85B00E28541 /* CoreData.framework */; };
 		FB6D22761B83D86600E28541 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22751B83D86600E28541 /* UIKit.framework */; };
 		FB6D22781B83D86C00E28541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22771B83D86C00E28541 /* Foundation.framework */; };
+		FB6D227B1B83DB3600E28541 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D227A1B83DB3600E28541 /* MathController.m */; };
+		FB6D22841B84537E00E28541 /* PastRunDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D22831B84537E00E28541 /* PastRunDetailViewController.m */; };
+		FB6D228D1B850DB400E28541 /* PastRunsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D228C1B850DB400E28541 /* PastRunsTableViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		FB9DF0B01B859A4C0087A0F8 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		FB6D22541B83D01800E28541 /* PBXContainerItemProxy */ = {
@@ -64,6 +79,12 @@
 		FB6D22731B83D85B00E28541 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FB6D22751B83D86600E28541 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB6D22771B83D86C00E28541 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB6D22791B83DB3600E28541 /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
+		FB6D227A1B83DB3600E28541 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
+		FB6D22821B84537E00E28541 /* PastRunDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastRunDetailViewController.h; sourceTree = "<group>"; };
+		FB6D22831B84537E00E28541 /* PastRunDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastRunDetailViewController.m; sourceTree = "<group>"; };
+		FB6D228B1B850DB400E28541 /* PastRunsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastRunsTableViewController.h; sourceTree = "<group>"; };
+		FB6D228C1B850DB400E28541 /* PastRunsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastRunsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +142,15 @@
 				FB6D223C1B83D01800E28541 /* AppDelegate.m */,
 				FB6D226C1B83D3BB00E28541 /* NewRunViewController.h */,
 				FB6D226D1B83D3BB00E28541 /* NewRunViewController.m */,
+				FB6D22791B83DB3600E28541 /* MathController.h */,
+				FB6D227A1B83DB3600E28541 /* MathController.m */,
 				FB6D22441B83D01800E28541 /* DetailViewController.h */,
 				FB6D22451B83D01800E28541 /* DetailViewController.m */,
 				FB6D22471B83D01800E28541 /* Main.storyboard */,
+				FB6D228B1B850DB400E28541 /* PastRunsTableViewController.h */,
+				FB6D228C1B850DB400E28541 /* PastRunsTableViewController.m */,
+				FB6D22821B84537E00E28541 /* PastRunDetailViewController.h */,
+				FB6D22831B84537E00E28541 /* PastRunDetailViewController.m */,
 				FB6D224A1B83D01800E28541 /* Images.xcassets */,
 				FB6D224C1B83D01800E28541 /* LaunchScreen.xib */,
 				FB6D223E1B83D01800E28541 /* RunningApp.xcdatamodeld */,
@@ -174,6 +201,7 @@
 				FB6D22321B83D01800E28541 /* Resources */,
 			);
 			buildRules = (
+				FB9DF0B01B859A4C0087A0F8 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -211,6 +239,11 @@
 				TargetAttributes = {
 					FB6D22331B83D01800E28541 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FB6D22521B83D01800E28541 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -264,10 +297,13 @@
 			files = (
 				FB6D22461B83D01800E28541 /* DetailViewController.m in Sources */,
 				FB6D22681B83D0C800E28541 /* Run.m in Sources */,
+				FB6D227B1B83DB3600E28541 /* MathController.m in Sources */,
+				FB6D228D1B850DB400E28541 /* PastRunsTableViewController.m in Sources */,
 				FB6D223D1B83D01800E28541 /* AppDelegate.m in Sources */,
 				FB6D223A1B83D01800E28541 /* main.m in Sources */,
 				FB6D22651B83D0C800E28541 /* Location.m in Sources */,
 				FB6D226B1B83D36500E28541 /* HomeViewController.m in Sources */,
+				FB6D22841B84537E00E28541 /* PastRunDetailViewController.m in Sources */,
 				FB6D22401B83D01800E28541 /* RunningApp.xcdatamodeld in Sources */,
 				FB6D226E1B83D3BB00E28541 /* NewRunViewController.m in Sources */,
 			);
@@ -464,6 +500,7 @@
 				FB6D225F1B83D01800E28541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB6D22601B83D01800E28541 /* Build configuration list for PBXNativeTarget "RunningAppTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +509,7 @@
 				FB6D22621B83D01800E28541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
