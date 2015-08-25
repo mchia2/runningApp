@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) Run *selectedRun;
 
+-(IBAction)facebookPressed;
 
 @end
 

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Let us use it only in your app</string>
+	<string>Hello there.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Allow us to use it all the time</string>
+	<string>Hey There.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -54,5 +54,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1451370098526063</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>1451370098526063</string>
+    <key>FacebookDisplayName</key>
+    <string>RunningApp</string>
 </dict>
 </plist>

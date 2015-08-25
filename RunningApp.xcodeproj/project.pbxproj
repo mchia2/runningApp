@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB05A7311B864CFA0069825E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05A7301B864CFA0069825E /* Social.framework */; };
+		FB05A7331B8650440069825E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB05A7321B8650440069825E /* QuartzCore.framework */; };
 		FB6D223A1B83D01800E28541 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D22391B83D01800E28541 /* main.m */; };
 		FB6D223D1B83D01800E28541 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D223C1B83D01800E28541 /* AppDelegate.m */; };
 		FB6D22401B83D01800E28541 /* RunningApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6D223E1B83D01800E28541 /* RunningApp.xcdatamodeld */; };
@@ -27,6 +29,8 @@
 		FB6D227B1B83DB3600E28541 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D227A1B83DB3600E28541 /* MathController.m */; };
 		FB6D22841B84537E00E28541 /* PastRunDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D22831B84537E00E28541 /* PastRunDetailViewController.m */; };
 		FB6D228D1B850DB400E28541 /* PastRunsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6D228C1B850DB400E28541 /* PastRunsTableViewController.m */; };
+		FB9DF0C01B85A0A10087A0F8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9DF0BE1B85A0A10087A0F8 /* FBSDKCoreKit.framework */; };
+		FB9DF0C11B85A0A10087A0F8 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9DF0BF1B85A0A10087A0F8 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -52,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB05A7301B864CFA0069825E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		FB05A7321B8650440069825E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FB6D22341B83D01800E28541 /* RunningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6D22381B83D01800E28541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB6D22391B83D01800E28541 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 		FB6D22831B84537E00E28541 /* PastRunDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastRunDetailViewController.m; sourceTree = "<group>"; };
 		FB6D228B1B850DB400E28541 /* PastRunsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastRunsTableViewController.h; sourceTree = "<group>"; };
 		FB6D228C1B850DB400E28541 /* PastRunsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastRunsTableViewController.m; sourceTree = "<group>"; };
+		FB9DF0BE1B85A0A10087A0F8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Downloads/FacebookSDKs-iOS-20150813/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		FB9DF0BF1B85A0A10087A0F8 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Downloads/FacebookSDKs-iOS-20150813/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB05A7331B8650440069825E /* QuartzCore.framework in Frameworks */,
+				FB05A7311B864CFA0069825E /* Social.framework in Frameworks */,
+				FB9DF0C01B85A0A10087A0F8 /* FBSDKCoreKit.framework in Frameworks */,
+				FB9DF0C11B85A0A10087A0F8 /* FBSDKShareKit.framework in Frameworks */,
 				FB6D22781B83D86C00E28541 /* Foundation.framework in Frameworks */,
 				FB6D22761B83D86600E28541 /* UIKit.framework in Frameworks */,
 				FB6D22741B83D85B00E28541 /* CoreData.framework in Frameworks */,
@@ -113,6 +125,9 @@
 		FB6D222B1B83D01800E28541 = {
 			isa = PBXGroup;
 			children = (
+				FB05A7321B8650440069825E /* QuartzCore.framework */,
+				FB05A7301B864CFA0069825E /* Social.framework */,
+				FB9DF0C21B85A0A70087A0F8 /* Facebook Frameworks */,
 				FB6D22771B83D86C00E28541 /* Foundation.framework */,
 				FB6D22751B83D86600E28541 /* UIKit.framework */,
 				FB6D22731B83D85B00E28541 /* CoreData.framework */,
@@ -187,6 +202,15 @@
 				FB6D22581B83D01800E28541 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB9DF0C21B85A0A70087A0F8 /* Facebook Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB9DF0BE1B85A0A10087A0F8 /* FBSDKCoreKit.framework */,
+				FB9DF0BF1B85A0A10087A0F8 /* FBSDKShareKit.framework */,
+			);
+			name = "Facebook Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/MatthiasChia/Downloads/FacebookSDKs-iOS-20150813",
+				);
 				INFOPLIST_FILE = RunningApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +469,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/MatthiasChia/Downloads/FacebookSDKs-iOS-20150813",
+				);
 				INFOPLIST_FILE = RunningApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -32,6 +32,8 @@ static NSString * const detailSegueName = @"RunDetails";
 @property (nonatomic, weak) IBOutlet MKMapView *mapView;
 
 
+
+
 @end
 
 @implementation NewRunViewController
@@ -127,23 +129,22 @@ static NSString * const detailSegueName = @"RunDetails";
 
 - (void)startLocationUpdates
 {
-    // Create the location manager if this object does not
-    // already have one.
     if (self.locationManager == nil) {
         self.locationManager = [[CLLocationManager alloc] init];
     }
+   
+
     
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     self.locationManager.activityType = CLActivityTypeFitness;
     
-    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [self.locationManager requestWhenInUseAuthorization];
-    }
     
     // Movement threshold for new events.
     self.locationManager.distanceFilter = 10; // meters
-    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
     [self.locationManager startUpdatingLocation];
 }
 

@@ -11,6 +11,9 @@
 #import "MathController.h"
 #import "Run.h"
 #import "Location.h"
+#import <FBSDKSharekit/FBSDKSharekit.h>
+#import <Social/Social.h>
+
 
 @interface DetailViewController () <MKMapViewDelegate>
 
@@ -19,6 +22,8 @@
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 @property (nonatomic, weak) IBOutlet UILabel *timeLabel;
 @property (nonatomic, weak) IBOutlet UILabel *paceLabel;
+
+@property (nonatomic, weak) IBOutlet UIButton *facebook;
 
 @end
 
@@ -138,6 +143,23 @@
                                   cancelButtonTitle:@"OK"
                                   otherButtonTitles:nil];
         [alertView show];
+    }
+}
+
+-(IBAction)facebookPressed{
+    
+    CGRect rect = CGRectMake(0, 0, 380, 600);
+    UIGraphicsBeginImageContext(rect.size);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *screengrab = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]){
+        SLComposeViewController *message = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        message = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        [message setInitialText:@"Check out how much I ran today!"];
+        [message addImage:screengrab];
+        [self presentViewController:message animated:YES completion:nil];
     }
 }
 
